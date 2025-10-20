@@ -1,0 +1,36 @@
+---
+odoo:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: https://github.com/odoo/odoo.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+agrios:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:advanceinsight/AgriOS
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/account-financial-tools:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: https://github.com/OCA/account-financial-tools.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/web:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: https://github.com/OCA/web.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
