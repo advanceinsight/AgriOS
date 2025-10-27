@@ -10,12 +10,13 @@ odoo:
 
 agrios:
   defaults:
-    depth: ${WAFT_DEPTH_DEFAULT}
+    depth: ${WAFT_DEPTH_MERGE}
   remotes:
     origin: git@github.com:advanceinsight/AgriOS
   target: origin ${ODOO_VERSION}
   merges:
     - origin ${ODOO_VERSION}
+    - origin 18.0-lgpl
 
 OCA/account-financial-tools:
   defaults:
@@ -26,11 +27,33 @@ OCA/account-financial-tools:
   merges:
     - origin ${ODOO_VERSION}
 
+# OCA repositories
+
+OCA/partner-contact:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: https://github.com/OCA/partner-contact.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
 OCA/web:
   defaults:
     depth: ${WAFT_DEPTH_DEFAULT}
   remotes:
     origin: https://github.com/OCA/web.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+# Third party repositories
+
+3rdparty/kobo-integration:
+  defaults:
+    depth: ${WAFT_DEPTH_DEFAULT}
+  remotes:
+    origin: git@github.com:advanceinsight/kobo-integration
   target: origin ${ODOO_VERSION}
   merges:
     - origin ${ODOO_VERSION}
