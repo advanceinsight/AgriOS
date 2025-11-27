@@ -6,14 +6,6 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="agrios_farmer.res_config_settings_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//setting[@id='farmer_interactions']" position="before">
-                <setting
-                    id="seed_varieties"
-                    help="Allows the management of seeds varieties to product a harvestable product."
-                >
-                    <field name="group_seed_varieties"/>
-                </setting>
-            </xpath>
             <xpath expr="//app[@name='agrios']" position="inside">
                 <block title="Farm">
                     <setting

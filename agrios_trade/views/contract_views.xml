@@ -75,7 +75,7 @@
                 <field
                     name="available_seed_ids"
                     invisible="1"
-                    groups="agrios_plot.group_seed_varieties"
+                    groups="agrios_product.group_seed_varieties"
                 />
                 <header>
                     <button
@@ -164,7 +164,7 @@
                                     <field name="total_contract_cost"/>
                                 </group>
                                 <group string="Input Details">
-                                    <field name="seed_variety_id" options="{'no_create': True, 'no_create_edit': True}" domain="[('id','in',available_seed_ids)]" readonly="contract_stage != 'draft'" required="contract_stage == 'draft' and available_seed_ids" groups="agrios_plot.group_seed_varieties"/>
+                                    <field name="seed_variety_id" options="{'no_create': True, 'no_create_edit': True}" domain="[('id','in',available_seed_ids)]" readonly="contract_stage != 'draft'" required="contract_stage == 'draft' and available_seed_ids" groups="agrios_product.group_seed_varieties"/>
                                     <field name="total_inputs_cost"/>
                                 </group>
                         </group>

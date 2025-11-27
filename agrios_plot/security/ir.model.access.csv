@@ -1,7 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_agrios_manager_product_product,ams crud product.product,product.model_product_product,agrios_farmer.group_agrios_manager,1,1,1,0
-access_agrios_manager_product_template,ams crud product.template,product.model_product_template,agrios_farmer.group_agrios_manager,1,1,1,0
 access_agrios_readonly_farmer_plot_crop_area,ams read farmer.plot.crop.area,model_farmer_plot_crop_area,agrios_farmer.group_agrios_readonly,1,0,0,0
 access_agrios_user_farmer_plot_crop_area,ams crud farmer.plot.crop.area,model_farmer_plot_crop_area,agrios_farmer.group_agrios_user,1,1,1,1
-access_agrios_readonly_tree_yield,ams read plant.age.yield,model_plant_age_yield,agrios_farmer.group_agrios_readonly,1,0,0,0
-access_agrios_user_tree_yield,ams crud age.yield,model_plant_age_yield,agrios_farmer.group_agrios_user,1,1,1,1

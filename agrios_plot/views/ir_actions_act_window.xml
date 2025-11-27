@@ -15,28 +15,4 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <record id="agrios_product_template_action" model="ir.actions.act_window">
-        <field name="name">Products</field>
-        <field name="res_model">product.template</field>
-        <field name="view_mode">kanban,list,form</field>
-        <field name="search_view_id" ref="product_template_search_view"/>
-        <field name="context">{"search_default_filter_seed_product": 1, "search_default_filter_input_product": 1,
-            "search_default_filter_harvest_product": 1, 'default_type': 'consu'}
-        </field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                No product found. Let's create one!
-            </p>
-        </field>
-    </record>
-
-    <record id="agrios_product_product_action" model="ir.actions.act_window">
-        <field name="name">Product Variants</field>
-        <field name="res_model">product.product</field>
-        <field name="view_mode">list,form,kanban</field>
-        <field name="search_view_id" ref="product_search_form_view"/>
-        <field name="context">{"search_default_filter_input_product": 1, "search_default_filter_harvest_product": 1}
-        </field>
-    </record>
-
 </odoo>

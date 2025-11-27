@@ -1,82 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
     <record id="geospatial_plot.plot_demo_1" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">bad</field>
         <field name="year_established">2013</field>
     </record>
     <record id="geospatial_plot.plot_demo_2" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">good</field>
         <field name="year_established">2020</field>
     </record>
     <record id="geospatial_plot.plot_demo_3" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">verygood</field>
         <field name="year_established">2004</field>
     </record>
     <record id="geospatial_plot.plot_demo_4" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2009</field>
     </record>
     <record id="geospatial_plot.plot_demo_5" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">good</field>
         <field name="year_established">2020</field>
     </record>
     <record id="geospatial_plot.plot_demo_6" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">verygood</field>
         <field name="year_established">2013</field>
     </record>
     <record id="geospatial_plot.plot_demo_7" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2005</field>
     </record>
     <record id="geospatial_plot.plot_demo_8" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2014</field>
     </record>
     <record id="geospatial_plot.plot_demo_9" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">good</field>
         <field name="year_established">2020</field>
     </record>
     <record id="geospatial_plot.plot_demo_10" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">verygood</field>
         <field name="year_established">2007</field>
     </record>
     <record id="geospatial_plot.plot_demo_11" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">bad</field>
         <field name="year_established">2000</field>
     </record>
     <record id="geospatial_plot.plot_demo_12" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2014</field>
     </record>
     <record id="geospatial_plot.plot_demo_13" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2007</field>
     </record>
     <record id="geospatial_plot.plot_demo_14" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">bad</field>
         <field name="year_established">2022</field>
     </record>
     <record id="geospatial_plot.plot_demo_15" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">good</field>
         <field name="year_established">2019</field>
     </record>
     <record id="geospatial_plot.plot_demo_16" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">verygood</field>
         <field name="year_established">2021</field>
     </record>
     <record id="geospatial_plot.plot_demo_17" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2015</field>
     </record>
     <record id="geospatial_plot.plot_demo_18" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">good</field>
         <field name="year_established">2002</field>
     </record>
     <record id="geospatial_plot.plot_demo_19" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">verygood</field>
         <field name="year_established">2012</field>
     </record>
     <record id="geospatial_plot.plot_demo_20" model="geospatial.plot">
+        <field name="is_agricultural_plot">True</field>
         <field name="plot_condition">needsimprovement</field>
         <field name="year_established">2009</field>
     </record>

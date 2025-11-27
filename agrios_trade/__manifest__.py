@@ -18,6 +18,7 @@
         "account_usability",
         # Agrios Modules
         "agrios_plot",
+        "agrios_product",
     ],
     "data": [
         "security/res_groups.xml",

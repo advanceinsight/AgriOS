@@ -28,21 +28,4 @@
         groups="geospatial_plot.group_plot_manager"
     />
 
-    <!-- Product menu's -->
-
-    <menuitem
-        id="menu_product"
-        name="Products"
-        parent="agrios_farmer.agrios_menu_root"
-        sequence="50"
-        groups="agrios_farmer.group_agrios_manager"
-    />
-    <menuitem
-        id="sub_menu_product"
-        name="Products"
-        parent="menu_product"
-        action="agrios_product_template_action"
-        sequence="10"
-    />
-
 </odoo>

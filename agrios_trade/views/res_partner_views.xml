@@ -4,7 +4,7 @@
     <record id="view_farmer_partner_form" model="ir.ui.view">
         <field name="name">res.partner.form</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="agrios_plot.view_partner_form"/>
+        <field name="inherit_id" ref="agrios_product.view_partner_form"/>
         <field name="priority" eval="128"/>
         <field name="arch" type="xml">
             <xpath expr="//page" position="inside">

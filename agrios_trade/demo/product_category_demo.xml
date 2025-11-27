@@ -2,7 +2,7 @@
 <odoo noupdate="1">
 
     <!-- Add accounting values to product.category -->
-    <record id="agrios_plot.product_category_materials_tools_chemicals" model="product.category">
+    <record id="agrios_product.product_category_materials_tools_chemicals" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -12,7 +12,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_crops_and_seeds" model="product.category">
+    <record id="agrios_product.product_category_crops_and_seeds" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -22,7 +22,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_soil_fertility" model="product.category">
+    <record id="agrios_product.product_category_soil_fertility" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -32,7 +32,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_post_harvest_management" model="product.category">
+    <record id="agrios_product.product_category_post_harvest_management" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -42,7 +42,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_tools" model="product.category">
+    <record id="agrios_product.product_category_tools" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -52,7 +52,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_raw_material" model="product.category">
+    <record id="agrios_product.product_category_raw_material" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -62,7 +62,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_seeds" model="product.category">
+    <record id="agrios_product.product_category_seeds" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -72,7 +72,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_pulses" model="product.category">
+    <record id="agrios_product.product_category_pulses" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -82,7 +82,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_fruit" model="product.category">
+    <record id="agrios_product.product_category_fruit" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -92,7 +92,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_grains" model="product.category">
+    <record id="agrios_product.product_category_grains" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -102,7 +102,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_edible_leafy_vegetable" model="product.category">
+    <record id="agrios_product.product_category_edible_leafy_vegetable" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -112,7 +112,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_root_vegetable" model="product.category">
+    <record id="agrios_product.product_category_root_vegetable" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>
@@ -122,7 +122,7 @@
         <field name="property_stock_account_output_categ_id" ref="account_output"/>
         <field name="property_stock_journal" ref="inventory_valuation_journal"/>
     </record>
-    <record id="agrios_plot.product_category_spices" model="product.category">
+    <record id="agrios_product.product_category_spices" model="product.category">
         <field name="property_account_income_categ_id" ref="account_income"/>
         <field name="property_account_expense_categ_id" ref="account_expense"/>
         <field name="property_cost_method">average</field>

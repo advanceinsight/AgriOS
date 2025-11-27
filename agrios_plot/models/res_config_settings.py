@@ -6,7 +6,4 @@ from odoo import fields, models
 class ResConfigSettings(models.TransientModel):
     _inherit = "res.config.settings"
 
-    group_seed_varieties = fields.Boolean(
-        "Seed Varieties", implied_group="agrios_plot.group_seed_varieties"
-    )
     max_plot_size = fields.Float(config_parameter="farmer_management.max_plot_size")
