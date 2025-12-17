@@ -4,6 +4,7 @@ access_user_farmer_contract,crud access.farmer.contract,model_farmer_contract,ag
 access_multiple_confirm_draft_contracts_wizard,multiple.confirm.draft.contracts.wizard,model_multiple_confirm_draft_contracts_wizard,agrios_farmer.group_agrios_user,1,1,1,1
 access_multiple_set_contracted_mapped_qty_wizard,multiple.set.contracted.mapped.qty.wizard,model_multiple_set_contracted_mapped_qty_wizard,agrios_farmer.group_agrios_user,1,1,1,1
 access_readonly_season,read access.season,model_season,agrios_farmer.group_agrios_readonly,1,0,0,0
+access_season,access_season,model_season,agrios_farmer.group_agrios_manager,1,1,1,1
 access_readonly_account_move_line,crud access.account.move.line,account.model_account_move_line,agrios_farmer.group_agrios_readonly,1,0,0,0
 access_manager_stock_move,crud access.stock.move,stock.model_stock_move,agrios_farmer.group_agrios_manager,1,0,0,0
 access_bulk_contract_approval_wizard,bulk.contract.approval.wizard,model_bulk_contract_approval_wizard,group_farmer_contract,1,1,1,1
