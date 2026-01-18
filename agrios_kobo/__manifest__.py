@@ -18,6 +18,6 @@
         "views/action_utils_models.xml",
     ],
     "application": False,
-    "installable": True,
+    "installable": False,
     "auto_install": False,
 }
