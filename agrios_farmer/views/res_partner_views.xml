@@ -9,8 +9,7 @@
                 <field
                     name="name"
                     string="Name/Phone/Reference/ID"
-                    filter_domain="['|','|','|',('complete_name','ilike',self),
-                    ('phone','ilike',self),('farmer_ref','ilike',self)]"
+                    filter_domain="['|','|',('complete_name','ilike',self),('phone','ilike',self),('farmer_ref','ilike',self)]"
                 />
                 <separator/>
                 <filter string="Male" name="male" domain="[('gender', '=', 'male')]"/>
