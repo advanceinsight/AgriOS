@@ -10,8 +10,8 @@ smallholder farmers.
 - 🌐 **Website:** https://www.agrios.org
 - 📖 **Documentation:** https://documentation.agrios.org
 - 🏢 **Owner & Maintainer:** [Advance Insight](https://advanceinsight.dev)
-- 📜 **License:** See [LICENSE](./LICENSE) and [NOTICE](./NOTICE)
-- 🤝 **Contributing:** See [CONTRIBUTING.md](./CONTRIBUTING.md)
+- 📜 **License:** See [LICENSE-MPL-2.0](./LICENSE-MPL-2.0) and [NOTICE](./NOTICE.txt)
+- 🤝 **Contributing:** See the [contributing guide](https://documentation.agrios.org/contributing/)
 - 💬 **Code of Conduct:** https://documentation.agrios.org/contributing/code_of_conduct.html
 - 🐛 **Report a bug:** [GitHub Issues](https://github.com/advanceinsight/AgriOS/issues)
 
@@ -32,10 +32,10 @@ AgriOS uses a dual-license structure:
 
 | Component | License |
 |---|---|
-| Odoo Community core | [LGPLv3](./LICENSE) |
+| Odoo Community core | [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.html) |
 | AgriOS-specific modules | [MPL-2.0](./LICENSE-MPL-2.0) |
 
-See [NOTICE](./NOTICE) for full copyright information.
+See [NOTICE](./NOTICE.txt) for full copyright information.
 
 ## Deployments
 

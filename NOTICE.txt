@@ -7,7 +7,7 @@ GNU Lesser General Public License v3 (LGPLv3).
 
 The AgriOS-specific modules are copyright (C) Advance Insight B.V. and are
 licensed under the Mozilla Public License 2.0 (MPL-2.0). See LICENSE-MPL-2.0
-in this repository for the full license text and list of covered modules.
+in this repository for the full license text.
 
 Advance Insight B.V.
 Website: https://advanceinsight.dev
