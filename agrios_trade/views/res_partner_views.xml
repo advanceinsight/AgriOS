@@ -160,7 +160,7 @@
                     <field string="Off-takes" name="count_harvest_offtakes" widget="statinfo"/>
                 </button>
             </xpath>
-            <xpath expr="//button[@name='action_view_sale_order']" position="attributes">
+            <xpath expr="//button[@name='sale.act_res_partner_2_sale_order']" position="attributes">
                 <attribute name="invisible">is_farmer == True</attribute>
             </xpath>
         </field>

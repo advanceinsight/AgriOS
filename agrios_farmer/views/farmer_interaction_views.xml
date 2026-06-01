@@ -14,7 +14,7 @@
                     name="filter_not_active"
                     domain="[('active','=',False)]"
                 />
-                <group expand="1" string="Group By">
+                <group name="group_by">
                     <filter
                         string="Farmer"
                         name="groupby_farmer_id"

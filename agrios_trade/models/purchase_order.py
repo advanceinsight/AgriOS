@@ -68,7 +68,7 @@ class PurchaseOrder(models.Model):
                         "product_id": oftake_prd.id,
                         "name": oftake_prd.display_name,
                         "product_qty": balance_qty,
-                        "product_uom": oftake_prd.uom_po_id.id,
+                        "product_uom_id": oftake_prd.uom_po_id.id,
                     },
                 ),
             ]

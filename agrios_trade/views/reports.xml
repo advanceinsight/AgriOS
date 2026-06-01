@@ -19,7 +19,7 @@
                 <filter string="Approved Orders" name="filter_state_sale" domain="[('state','=','sale')]"/>
                 <filter string="Draft Orders" name="filter_state_draft" domain="[('state','in',('draft', 'sent'))]"/>
                 <filter string="Cancelled Orders" name="filter_state_cancel" domain="[('state','=','cancel')]"/>
-                <group expand="1" string="Group By">
+                <group name="group_by">
                     <filter string="Order Date/Time" name="groupby_date_order" context="{'group_by':'date_order'}"/>
                     <filter string="Farmer" name="groupby_order_partner_id" context="{'group_by':'order_partner_id'}"/>
                     <filter string="Product" name="groupby_product_id" context="{'group_by':'product_id'}"/>
@@ -44,9 +44,9 @@
                 <field name="date_order"/>
                 <field name="product_id"/>
                 <field name="product_uom_qty" sum="Quantity Total"/>
-                <field name="product_uom"/>
+                <field name="product_uom_id"/>
                 <field name="price_unit"/>
-                <field name="tax_id" widget="many2many_tags" optional="hide"/>
+                <field name="tax_ids" widget="many2many_tags" optional="hide"/>
                 <field name="price_tax" sum="Tax Amount Total" optional="hide"/>
                 <field name="price_subtotal" string="Total Price [Net]" sum="Net Price Total"/>
                 <field name="price_total" string="Total Price [Gross]" sum="Gross Price Total" optional="hide"/>
@@ -90,7 +90,7 @@
                 <filter string="Approved Orders" name="filter_state_approved" domain="[('state','in',('purchase','done'))]"/>
                 <filter string="Draft Orders" name="filter_state_draft" domain="[('state','in',('draft','sent','to approve'))]"/>
                 <filter string="Cancelled Orders" name="filter_state_cancel" domain="[('state','=','cancel')]"/>
-                <group expand="1" string="Group By">
+                <group name="group_by">
                     <filter string="Order Date/Time" name="groupby_date_order" context="{'group_by':'date_order'}"/>
                     <filter string="Farmer" name="groupby_partner_id" context="{'group_by':'partner_id'}"/>
                     <filter string="Product" name="groupby_product_id" context="{'group_by':'product_id'}"/>
@@ -115,9 +115,9 @@
                 <field name="date_order"/>
                 <field name="product_id"/>
                 <field name="product_qty" sum="Quantity Total"/>
-                <field name="product_uom"/>
+                <field name="product_uom_id"/>
                 <field name="price_unit"/>
-                <field name="taxes_id" widget="many2many_tags" optional="hide"/>
+                <field name="tax_ids" widget="many2many_tags" optional="hide"/>
                 <field name="price_tax" sum="Tax Amount Total" optional="hide"/>
                 <field name="price_subtotal" string="Total Price [Net]" sum="Net Price Total"/>
                 <field name="price_total" string="Total Price [Gross]" sum="Gross Price Total" optional="hide"/>

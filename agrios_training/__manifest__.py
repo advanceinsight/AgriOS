@@ -6,7 +6,7 @@
     "author": "Advance Insight",
     "website": "https://agrios.org",
     "category": "AgriOS",
-    "version": "18.0.1.0.1",
+    "version": "19.0.1.0.1",
     "license": "AGPL-3",
     "depends": [
         # Agrios Modules

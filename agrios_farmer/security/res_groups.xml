@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo noupdate="0">
 
+    <record id="res_groups_privilege_agrios" model="res.groups.privilege">
+        <field name="name">AgriOS</field>
+        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="sequence">100</field>
+    </record>
+
     <record id="group_agrios_readonly" model="res.groups">
         <field name="name">Agrios Readonly</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="res_groups_privilege_agrios"/>
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
     </record>
 
     <record id="group_agrios_user" model="res.groups">
         <field name="name">Agrios User</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="res_groups_privilege_agrios"/>
         <field name="implied_ids" eval="[(4, ref('group_agrios_readonly'))]"/>
     </record>
 
     <record id="group_agrios_tc" model="res.groups">
         <field name="name">Agrios Technical Coordinator</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="res_groups_privilege_agrios"/>
         <field name="implied_ids" eval="[(4, ref('group_agrios_user'))]"/>
     </record>
 
     <record id="group_agrios_manager" model="res.groups">
         <field name="name">Agrios Manager</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="res_groups_privilege_agrios"/>
         <field name="implied_ids" eval="[(4, ref('group_agrios_tc'))]"/>
     </record>
 
     <record id="group_agrios_admin" model="res.groups">
         <field name="name">Agrios Administrator</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="res_groups_privilege_agrios"/>
         <field name="implied_ids" eval="[(4, ref('group_agrios_manager'))]"/>
-        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        <field name="user_ids" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
     </record>
 
     <record id="group_farmer_interactions" model="res.groups">
         <field name="name">AgriOS Manage Farmers Interactions</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="res_groups_privilege_agrios"/>
     </record>
 
 </odoo>

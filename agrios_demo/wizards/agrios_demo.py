@@ -3,9 +3,9 @@
 import base64
 
 from odoo import models
-from odoo.modules.graph import Graph
-from odoo.modules.loading import load_data
-from odoo.modules.module import get_manifest, get_module_resource
+from odoo.modules.loading import load_demo
+from odoo.modules.module_graph import ModuleGraph
+from odoo.tools import file_open
 
 from odoo.addons.base.models.ir_module import assert_log_admin_access
 
@@ -29,14 +29,12 @@ class AgriosDemo(models.TransientModel):
             }
         )
 
-        info = get_manifest("agrios")
-        graph = Graph()
-        node = graph.add_node("agrios", info)
-        graph.update_from_db(env.cr)
+        graph = ModuleGraph(env.cr, mode="load")
+        graph.extend(["agrios"])
+        node = graph["agrios"]
         node.demo = True
-        load_data(env, {}, "init", kind="demo", package=node)
+        load_demo(env, node, {}, "init")
         env.clear()
-        env["res.groups"]._update_user_groups_view()
         env["res.partner"].search([("is_farmer", "=", True)]).action_verify_farmer()
 
         # update Department Manager
@@ -79,7 +77,7 @@ class AgriosDemo(models.TransientModel):
 
     def _load_image_base64(self, *path_parts):
         """Convert an image file into a base64-encoded string."""
-        file_path = get_module_resource("agrios_demo", *path_parts)
-        with open(file_path, "rb") as f:
+        rel_path = "/".join(("agrios_demo",) + path_parts)
+        with file_open(rel_path, "rb") as f:
             data = f.read()
         return base64.b64encode(data)

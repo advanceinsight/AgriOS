@@ -55,10 +55,17 @@
         <field name="inherit_id" ref="purchase.res_partner_view_purchase_buttons"/>
         <field name="priority" eval="128" />
         <field name="arch" type="xml">
+            <!-- Hide (do not delete) the standard "Purchases" stat button: agrios
+                 shows farmer-specific off-take buttons instead. Deleting the
+                 button removes the purchase_order_count field that the core
+                 purchase_stock view anchors to (//field[@name='purchase_order_count']/..),
+                 so we keep the node and only hide it. -->
             <xpath
                 expr="//button[@name='%(purchase.act_res_partner_2_purchase_order)d']"
-                position="replace"
-            />
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
         </field>
     </record>
 

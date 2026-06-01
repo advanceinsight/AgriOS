@@ -177,7 +177,7 @@
                                         <field name="product_uom_qty"/>
                                         <field name="qty_delivered"/>
                                         <field name="qty_invoiced"/>
-                                        <field name="product_uom" string="UoM" optional="show"/>
+                                        <field name="product_uom_id" string="UoM" optional="show"/>
                                         <field name="price_unit"/>
                                         <field name="price_subtotal" sum="Total Net Amount" optional="show"/>
                                         <field name="price_tax" sum="Total Tax Amount" optional="hide"/>
@@ -194,7 +194,7 @@
                                         <field name="product_qty"/>
                                         <field name="qty_received"/>
                                         <field name="qty_invoiced"/>
-                                        <field name="product_uom" string="UoM" optional="show"/>
+                                        <field name="product_uom_id" string="UoM" optional="show"/>
                                         <field name="price_unit"/>
                                         <field name="price_subtotal" sum="Total Net Amount" optional="show"/>
                                         <field name="price_tax" sum="Total Tax Amount" optional="hide"/>

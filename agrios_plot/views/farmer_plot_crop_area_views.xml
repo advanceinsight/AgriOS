@@ -10,7 +10,7 @@
                 <field name="crop_product_id"/>
                 <field name="year_of_plantation"/>
                 <separator/>
-                <group expand="0" name="group_by" string="Group By">
+                <group name="group_by">
                     <filter
                         string="Plot"
                         name="groupby_plot_id"

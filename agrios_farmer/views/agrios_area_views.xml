@@ -8,7 +8,7 @@
             <search>
                 <field name="name" />
                 <field name="country_id" />
-                <group expand="0" string="Group By">
+                <group name="group_by">
                     <filter name="groupby_country_id" context="{'group_by': 'country_id'}" />
                     <filter name="groupby_parent_id" context="{'group_by': 'parent_id'}"/>
                 </group>

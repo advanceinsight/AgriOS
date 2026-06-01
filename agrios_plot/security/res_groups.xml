@@ -3,7 +3,7 @@
 
     <record id="group_seed_varieties" model="res.groups">
         <field name="name">AgriOS - Manage Seed Varieties</field>
-        <field name="category_id" ref="base.module_category_agrios"/>
+        <field name="privilege_id" ref="agrios_farmer.res_groups_privilege_agrios"/>
     </record>
 
 </odoo>

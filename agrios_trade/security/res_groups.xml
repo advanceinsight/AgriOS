@@ -6,12 +6,10 @@
     </record>
 
     <record id="group_farmer_contract" model="res.groups">
-        <field name="category_id" ref="base.module_category_hidden"/>
         <field name="name">AgriOS - Manage Offtake Agreements</field>
     </record>
 
     <record id="group_payments_in_kind" model="res.groups">
-        <field name="category_id" ref="base.module_category_hidden"/>
         <field name="name">AgriOS - Payments In Kind</field>
     </record>
 

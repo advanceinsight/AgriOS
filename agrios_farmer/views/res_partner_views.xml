@@ -25,7 +25,7 @@
                 />
                 <separator/>
                 <filter string="Archived" name="archived" domain="[('active', '=', False)]"/>
-                <group expand="1" string="Group By">
+                <group name="group_by">
                     <filter name="groupby_farmer_group_id" context="{'group_by': 'farmer_group_id'}"/>
                     <filter name="groupby_gender" context="{'group_by': 'gender'}"/>
                 </group>
@@ -107,19 +107,16 @@
             <xpath expr="//field[@name='function']" position="attributes">
                 <attribute name="invisible">is_company or is_farmer</attribute>
             </xpath>
-            <xpath expr="//field[@name='title']" position="attributes">
-                <attribute name="invisible">is_company or is_farmer</attribute>
-            </xpath>
             <xpath expr="//field[@name='website']" position="attributes">
                 <attribute name="invisible">is_farmer == True</attribute>
             </xpath>
             <!--Add farmer ref and replace placeholder Brandon Freeman. -->
-            <xpath expr="//field[@id='individual']" position="before">
+            <xpath expr="//field[@name='name'][@invisible='is_company']" position="before">
                 <span invisible="farmer_ref == '/'">
                     [<field name="farmer_ref" class="oe_inline" help="Farmer reference"/>]
                 </span>
             </xpath>
-            <xpath expr="//field[@id='individual']" position="attributes">
+            <xpath expr="//field[@name='name'][@invisible='is_company']" position="attributes">
                 <attribute name="placeholder">Person Name</attribute>
                 <attribute name="class">oe_inline</attribute>
             </xpath>

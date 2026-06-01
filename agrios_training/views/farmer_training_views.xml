@@ -25,7 +25,7 @@
                     name="filter_archived"
                     domain="[('active', '=', False)]"
                 />
-                <group expand="1" string="Group By">
+                <group name="group_by">
                     <filter
                         name="groupby_training_location"
                         context="{'group_by': 'training_location'}"
