@@ -10,7 +10,6 @@
     "license": "AGPL-3",
     "depends": [
         "ai_kobo_integration",
-        "agrios",
     ],
     "data": [
         "security/ir.model.access.csv",
